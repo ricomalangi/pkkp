@@ -1,0 +1,45 @@
+.section-tema {
+    margin-top: 10%;
+    h1 {
+        @include media-breakpoint-down(sm){
+            font-size: 28px;
+        }
+        text-align: center;
+        color: #5D2F56;
+        font-size: 48px;
+    }
+    hr {
+        @include media-breakpoint-down(sm){
+            width: 100px;
+        }
+        width: 257px;
+        border: 2px solid #5D2F56;
+        border-radius: 1px;
+    }
+    .my-card {
+        @include media-breakpoint-down(sm){
+           max-width: 280px;
+           height: 85px;
+        }
+        margin: 0 auto; 
+        float: none; 
+        margin-top: 8%;
+        width: 1000px;
+        height: 224px;
+        background: linear-gradient(276.79deg, #5D2F56 0.9%, #FE6E71 101.1%);
+        box-shadow: 0px 25px 30px 4px #DDB0B1;
+        border-radius: 24px;
+    }
+    .card-title {
+        @include media-breakpoint-down(sm){
+            font-size: 32px;
+            padding: 5px 0;
+        }
+        font-family: 'Niconne', cursive;
+        text-align: center;
+        font-size: 98px;
+        letter-spacing: 0.06em;
+        color: #FFC700;
+        padding: 35px 0;
+    }
+}
