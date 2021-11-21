@@ -10784,7 +10784,7 @@ body, html {
 }
 
 .main-bg {
-  background-image: url("../../images/main_background.jpg");
+  background-image: url("../images/main_background.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -10794,7 +10794,7 @@ body, html {
 
 @media (max-width: 767.98px) {
   .main-bg {
-    background-image: url("../../images/main_background_phone.svg");
+    background-image: url("../images/main_background_phone.svg");
     height: 60%;
     background-position: center;
     background-repeat: no-repeat;

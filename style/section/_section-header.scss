@@ -1,12 +1,12 @@
 .main-bg {
     @include media-breakpoint-down(sm){
-        background-image: url('../../images/main_background_phone.svg');
+        background-image: url('../images/main_background_phone.svg');
         height: 60%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
-    background-image: url('../../images/main_background.jpg');
+    background-image: url('../images/main_background.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
