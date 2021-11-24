@@ -10768,11 +10768,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #FFF4FE;
-}
-
-body, html {
-  height: 100%;
+  background-color: #FF6B6B;
+  height: 100vh;
 }
 
 .back-to-top {
@@ -10784,8 +10781,9 @@ body, html {
 }
 
 .main-bg {
+  height: 100vh;
   background-image: url("../images/main_background.jpg");
-  height: 100%;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -10795,7 +10793,6 @@ body, html {
 @media (max-width: 767.98px) {
   .main-bg {
     background-image: url("../images/main_background_phone.svg");
-    height: 60%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10820,19 +10817,54 @@ body, html {
 }
 
 .main-bg .header-content {
-  padding-right: 150px;
+  padding-right: 20%;
 }
 
 @media (max-width: 767.98px) {
   .main-bg .header-content {
     padding-right: 10%;
-    padding-top: 25%;
+    padding-top: 60%;
+  }
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-color: #E8C445;
+    -webkit-box-shadow: 0 0 3px #E8C445;
+            box-shadow: 0 0 3px #E8C445;
+  }
+  50% {
+    background-color: #F3D053;
+    -webkit-box-shadow: 0px 0px 12px 6px #F3D053;
+            box-shadow: 0px 0px 12px 6px #F3D053;
+  }
+  100% {
+    background-color: #E8C445;
+    -webkit-box-shadow: 0 0 3px #E8C445;
+            box-shadow: 0 0 3px #E8C445;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #E8C445;
+    -webkit-box-shadow: 0 0 3px #E8C445;
+            box-shadow: 0 0 3px #E8C445;
+  }
+  50% {
+    background-color: #F3D053;
+    -webkit-box-shadow: 0px 0px 12px 6px #F3D053;
+            box-shadow: 0px 0px 12px 6px #F3D053;
+  }
+  100% {
+    background-color: #E8C445;
+    -webkit-box-shadow: 0 0 3px #E8C445;
+            box-shadow: 0 0 3px #E8C445;
   }
 }
 
 .main-bg .btn-custom {
   text-align: center;
-  background: #E8C445;
   border-radius: 12px;
   width: 476px;
   height: 83px;
@@ -10840,6 +10872,8 @@ body, html {
   padding: 15px 0;
   font-size: 32px;
   color: #FFFFFF;
+  -webkit-animation: glowing 3000ms infinite;
+          animation: glowing 3000ms infinite;
 }
 
 @media (max-width: 767.98px) {
@@ -10851,55 +10885,53 @@ body, html {
   }
 }
 
-.main-bg .btn-custom:hover {
-  -webkit-box-shadow: 0px 0px 12px 6px #F3D053;
-          box-shadow: 0px 0px 12px 6px #F3D053;
-}
-
 .section-tema {
-  margin-top: 10%;
+  margin-top: 8%;
 }
 
-.section-tema h1 {
+.section-tema .content h1 {
   text-align: center;
-  color: #5D2F56;
-  font-size: 48px;
+  color: #1A535C;
+  font-size: 52px;
 }
 
 @media (max-width: 767.98px) {
-  .section-tema h1 {
+  .section-tema .content h1 {
     font-size: 28px;
   }
 }
 
-.section-tema hr {
+.section-tema .content hr {
   width: 257px;
-  border: 2px solid #5D2F56;
+  border: 2px solid #1A535C;
   border-radius: 1px;
 }
 
 @media (max-width: 767.98px) {
-  .section-tema hr {
+  .section-tema .content hr {
     width: 100px;
   }
 }
 
-.section-tema .my-card {
+.section-tema .content .my-card {
   margin: 0 auto;
   float: none;
-  margin-top: 8%;
+  margin-top: 80px;
   width: 1000px;
   height: 224px;
-  background: linear-gradient(276.79deg, #5D2F56 0.9%, #FE6E71 101.1%);
-  -webkit-box-shadow: 0px 25px 30px 4px #DDB0B1;
-          box-shadow: 0px 25px 30px 4px #DDB0B1;
+  background: #2B2D42;
+  -webkit-box-shadow: 0px 0px 38px 2px #FFC700;
+          box-shadow: 0px 0px 38px 2px #FFC700;
   border-radius: 24px;
 }
 
 @media (max-width: 767.98px) {
-  .section-tema .my-card {
-    max-width: 280px;
-    height: 85px;
+  .section-tema .content .my-card {
+    max-width: 320px;
+    height: 130px;
+    margin-top: 10%;
+    -webkit-box-shadow: 0px 0px 28px 1px #FFC700;
+            box-shadow: 0px 0px 28px 1px #FFC700;
   }
 }
 
@@ -10914,101 +10946,133 @@ body, html {
 
 @media (max-width: 767.98px) {
   .section-tema .card-title {
-    font-size: 32px;
-    padding: 5px 0;
+    font-size: 56px;
+    padding: 10px 0;
   }
 }
 
-.section-date {
-  margin-top: 15%;
+.section-date-location {
+  margin-top: 30%;
 }
 
-.section-date h1 {
+.section-date-location .content h1 {
   text-align: center;
-  color: #5D2F56;
-  font-size: 48px;
+  color: #1A535C;
+  font-size: 52px;
 }
 
 @media (max-width: 767.98px) {
-  .section-date h1 {
+  .section-date-location .content h1 {
     font-size: 28px;
   }
 }
 
-.section-date hr {
+.section-date-location .content hr {
   width: 257px;
-  border: 2px solid #5D2F56;
+  border: 2px solid #1A535C;
   border-radius: 1px;
 }
 
 @media (max-width: 767.98px) {
-  .section-date hr {
+  .section-date-location .content hr {
     width: 100px;
   }
 }
 
-.section-date .card {
+.section-date-location .content .hr-br {
+  width: 500px;
+  border: 2px solid #FFC700;
+  border-radius: 1px;
+  margin-bottom: 90px;
+}
+
+@media (max-width: 767.98px) {
+  .section-date-location .content .hr-br {
+    width: 200px;
+  }
+}
+
+.section-date-location .content .my-card {
+  max-width: 1000px;
+  background: #2B2D42;
+  -webkit-box-shadow: 0px 0px 38px 2px #FFC700;
+          box-shadow: 0px 0px 38px 2px #FFC700;
+  border-radius: 24px;
+  margin: 0 auto;
+  float: none;
   margin-top: 80px;
-  border-radius: 24px;
-  border: none;
-}
-
-@media (max-width: 767.98px) {
-  .section-date .card {
-    margin: 0 auto;
-    float: none;
-    margin-bottom: 20px;
-  }
-}
-
-.section-date .card .card-header {
-  border-radius: 24px;
-  z-index: 2;
-  background: #FE6E71;
-  -webkit-box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.25);
-}
-
-.section-date .card .card-header h5 {
-  font-weight: bold;
-  font-size: 48px;
-  color: #FFFFFF;
   text-align: center;
-  padding: 20px 0;
 }
 
 @media (max-width: 767.98px) {
-  .section-date .card .card-header h5 {
-    font-size: 32px;
-    padding: 15px 0;
+  .section-date-location .content .my-card {
+    max-width: 320px;
+    margin-top: 10%;
+    -webkit-box-shadow: 0px 0px 28px 1px #FFC700;
+            box-shadow: 0px 0px 28px 1px #FFC700;
   }
 }
 
-.section-date .card .card-body {
-  background: #FE6E71;
-  margin-top: -50px;
-  position: relative;
-  z-index: 1;
-  height: 350px;
-  border-radius: 24px;
-  padding: 90px 30px 0;
+.section-date-location .content .my-card .card-title {
+  margin-top: 62px;
+  font-family: Niconne;
+  font-size: 98px;
+  letter-spacing: 0.06em;
+  color: #FFC700;
 }
 
 @media (max-width: 767.98px) {
-  .section-date .card .card-body {
-    padding: 50px 30px 0;
+  .section-date-location .content .my-card .card-title {
+    font-size: 56px;
+    margin-top: 28px;
   }
 }
 
-.section-date .card .card-body p {
+.section-date-location .content .my-card h5 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: 0.12em;
   color: #FFFFFF;
-  font-size: 24px;
-  padding-bottom: 10px;
 }
 
 @media (max-width: 767.98px) {
-  .section-date .card .card-body p {
-    font-size: 12px;
+  .section-date-location .content .my-card h5 {
+    font-size: 26px;
+    margin-top: 28px;
+    margin-bottom: 28px;
+    font-weight: normal;
+    letter-spacing: 0.08em;
   }
+}
+
+.section-date-location .content .my-card p {
+  color: #FFFFFF;
+  font-size: 22px;
+}
+
+@media (max-width: 767.98px) {
+  .section-date-location .content .my-card p {
+    font-size: 18px;
+  }
+}
+
+.section-date-location .content .my-card .img-maps {
+  width: 62px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section-date-location .content .my-card .btn-custom {
+  width: 220px;
+  height: 50px;
+  background: #FFC700;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 12px 0;
+  font-size: 18px;
+  margin-bottom: 90px;
 }
 /*# sourceMappingURL=main.css.map */

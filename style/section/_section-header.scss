@@ -1,13 +1,13 @@
 .main-bg {
+    height: 100vh;
     @include media-breakpoint-down(sm){
         background-image: url('../images/main_background_phone.svg');
-        height: 60%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
     background-image: url('../images/main_background.jpg');
-    height: 100%;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,9 +29,23 @@
     .header-content {
         @include media-breakpoint-down(sm){
             padding-right: 10%;
-            padding-top: 25%;
+            padding-top: 60%;
         }
-        padding-right: 150px;
+        padding-right: 20%;
+    }
+    @keyframes glowing {
+        0% {
+            background-color: #E8C445;
+            box-shadow: 0 0 3px #E8C445;
+        }
+        50% {
+        background-color: #F3D053;
+        box-shadow: 0px 0px 12px 6px #F3D053;
+        }
+        100% {
+            background-color: #E8C445;
+            box-shadow: 0 0 3px #E8C445;
+        }
     }
     .btn-custom {
         @include media-breakpoint-down(sm){
@@ -41,7 +55,6 @@
             padding: 6px 0;
         }
         text-align: center;
-        background: #E8C445;
         border-radius: 12px;
         width: 476px;
         height: 83px;
@@ -49,8 +62,6 @@
         padding: 15px 0;
         font-size: 32px;
         color: #FFFFFF;
-        &:hover{
-            box-shadow: 0px 0px 12px 6px #F3D053;
-        }
+        animation: glowing 3000ms infinite;
     }
 }

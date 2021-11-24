@@ -1,39 +1,45 @@
 .section-tema {
-    margin-top: 10%;
-    h1 {
-        @include media-breakpoint-down(sm){
-            font-size: 28px;
+    margin-top: 8%;
+    .content {
+        h1 {
+            @include media-breakpoint-down(sm){
+                font-size: 28px;
+            }
+            text-align: center;
+            color: #1A535C;
+            font-size: 52px;
         }
-        text-align: center;
-        color: #5D2F56;
-        font-size: 48px;
-    }
-    hr {
-        @include media-breakpoint-down(sm){
-            width: 100px;
+        hr {
+            @include media-breakpoint-down(sm){
+                width: 100px;
+            }
+            width: 257px;
+            border: 2px solid #1A535C;
+            border-radius: 1px;
         }
-        width: 257px;
-        border: 2px solid #5D2F56;
-        border-radius: 1px;
-    }
-    .my-card {
-        @include media-breakpoint-down(sm){
-           max-width: 280px;
-           height: 85px;
+        .my-card {
+            @include media-breakpoint-down(sm){
+               max-width: 320px;
+               height: 130px;
+               margin-top: 10%;
+               box-shadow: 0px 0px 28px 1px #FFC700;
+            }
+            margin: 0 auto; 
+            float: none; 
+            margin-top: 80px;
+            width: 1000px;
+            height: 224px;
+            background: #2B2D42;
+            box-shadow: 0px 0px 38px 2px #FFC700;
+            border-radius: 24px;
         }
-        margin: 0 auto; 
-        float: none; 
-        margin-top: 8%;
-        width: 1000px;
-        height: 224px;
-        background: linear-gradient(276.79deg, #5D2F56 0.9%, #FE6E71 101.1%);
-        box-shadow: 0px 25px 30px 4px #DDB0B1;
-        border-radius: 24px;
     }
+    
+   
     .card-title {
         @include media-breakpoint-down(sm){
-            font-size: 32px;
-            padding: 5px 0;
+            font-size: 56px;
+            padding: 10px 0;
         }
         font-family: 'Niconne', cursive;
         text-align: center;
