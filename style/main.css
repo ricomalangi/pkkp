@@ -10768,7 +10768,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #FF6B6B;
+  background-color: #B70B0D;
   height: 100vh;
 }
 
@@ -10782,7 +10782,7 @@ body {
 
 .main-bg {
   height: 100vh;
-  background-image: url("../images/main_background.jpg");
+  background-image: url("../images/main_background.svg");
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -10829,37 +10829,37 @@ body {
 
 @-webkit-keyframes glowing {
   0% {
-    background-color: #E8C445;
-    -webkit-box-shadow: 0 0 3px #E8C445;
-            box-shadow: 0 0 3px #E8C445;
+    background-color: #F39A05;
+    -webkit-box-shadow: 0 0 3px #F39A05;
+            box-shadow: 0 0 3px #F39A05;
   }
   50% {
-    background-color: #F3D053;
-    -webkit-box-shadow: 0px 0px 12px 6px #F3D053;
-            box-shadow: 0px 0px 12px 6px #F3D053;
+    background-color: #FFB401;
+    -webkit-box-shadow: 0px 0px 12px 6px #FFB401;
+            box-shadow: 0px 0px 12px 6px #FFB401;
   }
   100% {
-    background-color: #E8C445;
-    -webkit-box-shadow: 0 0 3px #E8C445;
-            box-shadow: 0 0 3px #E8C445;
+    background-color: #F39A05;
+    -webkit-box-shadow: 0 0 3px #F39A05;
+            box-shadow: 0 0 3px #F39A05;
   }
 }
 
 @keyframes glowing {
   0% {
-    background-color: #E8C445;
-    -webkit-box-shadow: 0 0 3px #E8C445;
-            box-shadow: 0 0 3px #E8C445;
+    background-color: #F39A05;
+    -webkit-box-shadow: 0 0 3px #F39A05;
+            box-shadow: 0 0 3px #F39A05;
   }
   50% {
-    background-color: #F3D053;
-    -webkit-box-shadow: 0px 0px 12px 6px #F3D053;
-            box-shadow: 0px 0px 12px 6px #F3D053;
+    background-color: #FFB401;
+    -webkit-box-shadow: 0px 0px 12px 6px #FFB401;
+            box-shadow: 0px 0px 12px 6px #FFB401;
   }
   100% {
-    background-color: #E8C445;
-    -webkit-box-shadow: 0 0 3px #E8C445;
-            box-shadow: 0 0 3px #E8C445;
+    background-color: #F39A05;
+    -webkit-box-shadow: 0 0 3px #F39A05;
+            box-shadow: 0 0 3px #F39A05;
   }
 }
 
@@ -10891,7 +10891,7 @@ body {
 
 .section-tema .content h1 {
   text-align: center;
-  color: #1A535C;
+  color: #FFFFFF;
   font-size: 52px;
 }
 
@@ -10903,7 +10903,7 @@ body {
 
 .section-tema .content hr {
   width: 257px;
-  border: 2px solid #1A535C;
+  border: 2px solid #FFFFFF;
   border-radius: 1px;
 }
 
@@ -10919,9 +10919,9 @@ body {
   margin-top: 80px;
   width: 1000px;
   height: 224px;
-  background: #2B2D42;
-  -webkit-box-shadow: 0px 0px 38px 2px #FFC700;
-          box-shadow: 0px 0px 38px 2px #FFC700;
+  background: #E57505;
+  -webkit-box-shadow: 0px 0px 26px 11px #FFB401;
+          box-shadow: 0px 0px 26px 11px #FFB401;
   border-radius: 24px;
 }
 
@@ -10930,8 +10930,8 @@ body {
     max-width: 320px;
     height: 130px;
     margin-top: 10%;
-    -webkit-box-shadow: 0px 0px 28px 1px #FFC700;
-            box-shadow: 0px 0px 28px 1px #FFC700;
+    -webkit-box-shadow: 0px 0px 28px 1px #FFB401;
+            box-shadow: 0px 0px 28px 1px #FFB401;
   }
 }
 
@@ -10940,7 +10940,7 @@ body {
   text-align: center;
   font-size: 98px;
   letter-spacing: 0.06em;
-  color: #FFC700;
+  color: #FFFFFF;
   padding: 35px 0;
 }
 
@@ -10957,7 +10957,7 @@ body {
 
 .section-date-location .content h1 {
   text-align: center;
-  color: #1A535C;
+  color: #FFFFFF;
   font-size: 52px;
 }
 
@@ -10969,7 +10969,7 @@ body {
 
 .section-date-location .content hr {
   width: 257px;
-  border: 2px solid #1A535C;
+  border: 2px solid #FFFFFF;
   border-radius: 1px;
 }
 
@@ -10981,7 +10981,7 @@ body {
 
 .section-date-location .content .hr-br {
   width: 500px;
-  border: 2px solid #FFC700;
+  border: 2px solid #FFFFFF;
   border-radius: 1px;
   margin-bottom: 90px;
 }
@@ -10994,9 +10994,9 @@ body {
 
 .section-date-location .content .my-card {
   max-width: 1000px;
-  background: #2B2D42;
-  -webkit-box-shadow: 0px 0px 38px 2px #FFC700;
-          box-shadow: 0px 0px 38px 2px #FFC700;
+  background: #E57505;
+  -webkit-box-shadow: 0px 4px 26px 11px #FFB401;
+          box-shadow: 0px 4px 26px 11px #FFB401;
   border-radius: 24px;
   margin: 0 auto;
   float: none;
@@ -11008,8 +11008,8 @@ body {
   .section-date-location .content .my-card {
     max-width: 320px;
     margin-top: 10%;
-    -webkit-box-shadow: 0px 0px 28px 1px #FFC700;
-            box-shadow: 0px 0px 28px 1px #FFC700;
+    -webkit-box-shadow: 0px 0px 28px 1px #FFB401;
+            box-shadow: 0px 0px 28px 1px #FFB401;
   }
 }
 
@@ -11018,7 +11018,7 @@ body {
   font-family: Niconne;
   font-size: 98px;
   letter-spacing: 0.06em;
-  color: #FFC700;
+  color: #FFFFFF;
 }
 
 @media (max-width: 767.98px) {
@@ -11068,7 +11068,7 @@ body {
 .section-date-location .content .my-card .btn-custom {
   width: 220px;
   height: 50px;
-  background: #FFC700;
+  background: #FFB401;
   border-radius: 4px;
   color: #FFFFFF;
   padding: 12px 0;

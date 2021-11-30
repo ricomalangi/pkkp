@@ -6,7 +6,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    background-image: url('../images/main_background.jpg');
+    background-image: url('../images/main_background.svg');
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -35,16 +35,16 @@
     }
     @keyframes glowing {
         0% {
-            background-color: #E8C445;
-            box-shadow: 0 0 3px #E8C445;
+            background-color: #F39A05;
+            box-shadow: 0 0 3px #F39A05;
         }
         50% {
-        background-color: #F3D053;
-        box-shadow: 0px 0px 12px 6px #F3D053;
+        background-color: #FFB401;
+        box-shadow: 0px 0px 12px 6px #FFB401;
         }
         100% {
-            background-color: #E8C445;
-            box-shadow: 0 0 3px #E8C445;
+            background-color: #F39A05;
+            box-shadow: 0 0 3px #F39A05;
         }
     }
     .btn-custom {
