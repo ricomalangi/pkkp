@@ -11040,11 +11040,11 @@ body {
 
 @media (max-width: 767.98px) {
   .section-date-location .content .my-card h5 {
-    font-size: 26px;
+    font-size: 20px;
     margin-top: 28px;
     margin-bottom: 28px;
     font-weight: normal;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
   }
 }
 
