@@ -1,7 +1,52 @@
-body {
+.body-index {
     font-family: 'Roboto', sans-serif;
     background-color: #B70B0D;
     height: 100vh;
+}
+.snowflake {
+    --size: 1vw;
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -5vh;
+}
+@keyframes snowfall {
+    0% {
+      transform: translate3d(var(--left-ini), 0, 0);
+    }
+    100% {
+      transform: translate3d(var(--left-end), 110vh, 0);
+    }
+}
+
+@for $i from 1 through 50 {
+    .snowflake:nth-child(#{$i}) {
+      --size: #{random(5) * 0.2}vw;
+      --left-ini: #{random(20) - 10}vw;
+      --left-end: #{random(20) - 10}vw;
+      left: #{random(100)}vw;
+      animation: snowfall #{5 + random(10)}s linear infinite;
+      animation-delay: -#{random(10)}s;
+    }
+  }
+  
+  /* added small blur every 6 snowflakes*/
+  .snowflake:nth-child(6n) {
+    filter: blur(1px);
+  }
+  
+.body-undangan {
+    @include media-breakpoint-down(sm){
+        background-image: url("../images/background_undangan_phone.svg");
+    }
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../images/bacground-undangan.svg");
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .back-to-top {

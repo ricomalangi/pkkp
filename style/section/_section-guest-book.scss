@@ -1,0 +1,40 @@
+.section-guest-book{
+    margin-top: 30%; 
+    .content {
+        h1 {
+            @include media-breakpoint-down(sm){
+                font-size: 28px;
+            }
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 52px;
+        }
+        hr {
+            @include media-breakpoint-down(sm){
+                width: 100px;
+            }
+            width: 257px;
+            border: 2px solid #FFFFFF;
+            border-radius: 1px;
+        }
+        .my-btn {
+            @include media-breakpoint-down(sm){
+                width: 260px;
+                margin-top: 10%;
+                box-shadow: 0px 0px 28px 1px #FFB401;
+                font-size: 28px;
+                padding-top: 32px;
+            }
+            width: 1000px;
+            height: 160px;
+            margin-top: 80px;
+            text-align: center;
+            background: rgba(229, 117, 5, 0.5);
+            box-shadow: 0px 4px 26px 11px #FFB401;
+            border-radius: 24px;
+            color: #FFFFFF;
+            font-size: 32px;
+            padding-top: 52px;
+        }
+    }
+}

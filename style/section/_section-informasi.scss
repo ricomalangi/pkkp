@@ -1,0 +1,95 @@
+.section-informasi {
+    margin-top: 30%;  
+    .content {
+        h1 {
+            @include media-breakpoint-down(sm){
+                font-size: 28px;
+            }
+            text-align: center;
+            color: #FFFFFF;
+            font-size: 52px;
+        }
+        hr {
+            @include media-breakpoint-down(sm){
+                width: 100px;
+            }
+            width: 257px;
+            border: 2px solid #FFFFFF;
+            border-radius: 1px;
+        }
+        .hr-br {
+            @include media-breakpoint-down(sm){
+                width: 200px;
+            }
+            width: 500px;
+            border: 2px solid #FFFFFF;
+            border-radius: 1px;
+            margin-bottom: 90px;
+        }
+        .my-card {
+            @include media-breakpoint-down(sm){
+                max-width: 320px;
+                margin-top: 10%;
+                box-shadow: 0px 0px 28px 1px #FFB401;
+            }
+            max-width: 1000px;
+            background: rgba(229, 117, 5, 0.5);
+            box-shadow: 0px 4px 26px 11px #FFB401;
+            border-radius: 24px;
+            margin: 0 auto; 
+            float: none; 
+            margin-top: 80px;
+            text-align: center;
+            padding-bottom: 48px;
+            h5 {
+                @include media-breakpoint-down(sm){
+                    font-size: 20px;
+                    margin-top: 28px;
+                    margin-bottom: 28px;
+                    font-weight: normal;
+                }
+                margin-top: 20px;
+                margin-bottom: 36px;
+                font-size: 48px;
+                color: #FFFFFF;
+            }
+            .card-body{
+                p {
+                    @include media-breakpoint-down(sm){
+                        font-size: 18px;
+                        width: 215px;
+                    }
+                    width: 712px;
+                    color: #FFFFFF;
+                    font-size: 22px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .card-information {
+                p {
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    width: 300px;
+                    margin: auto;
+                }
+            }
+                
+            .img-maps {
+                width: 62px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            .btn-custom {
+                width: 220px;
+                height: 50px;
+                background: #FFB401;
+                border-radius: 4px;
+                color: #FFFFFF;
+                padding: 12px 0;
+                font-size: 18px;
+                margin-bottom: 90px;
+            }
+        }
+    }
+}
